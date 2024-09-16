@@ -1,10 +1,69 @@
+
 body {
     font-family: "Roboto", sans-serif;
     color: #434455;
     background-color: #FFFFFF;
 }
+h1,h2,h3,h4,h5,h6,p {
+ margin: 50px;   
+}
+ul,
+li {
+list-style-type: none; 
+padding: 0;
+margin: 0;
+}
+.img {
+display: block;
+max-width: 100%;
+height: auto;
+}
+.container {
+    max-width: 1128px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.card-set {
+display: flex;
+flex-wrap: wrap;
+row-gap: 48px;
+column-gap: 24px;
+}
+.card-set-item {
+width: calc((100% - 48px) / 3);
+box-sizing: border-box;
+}
+.section {
+  padding: 120px 0;  
+}
+
 /* region Header */
+.header-nav {
+ display: flex; 
+ align-items: center;
+ justify-content: space-between;
+ margin-right: 166px;
+ flex-grow: 1;   
+}
+.header-container {
+    display: flex;
+    align-items: center;
+}
+.header-nav-list {
+display: flex; 
+align-items: center;
+gap: 40px;
+
+}
+.address-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 24px 0;;
+}
 .header-menu {
+ display: block;
+ padding: 24px 0;
  color:#2E2F42;
  font-weight: 500;
  font-size: 16px;
@@ -47,6 +106,7 @@ color: #404BBF;
 font-style: normal;
 }
 .header-info {
+  align-items: center;
   color: #434455;
   font-size: 16px;
   line-height: 1.5;
@@ -60,6 +120,7 @@ font-style: normal;
 
 /* region Hero */
 .hero-section {
+    padding: 188px 0;
     background-color: #2E2F42;
 }
 .hero-title {
@@ -71,6 +132,8 @@ font-style: normal;
     text-align: center;
 }
 .main-button {
+    display: block;
+    margin: 0 auto;
     color: #FFFFFF;
     background-color: #4D5AE5;
     font-family: "Roboto", sans-serif;
@@ -89,6 +152,28 @@ background-color: #404BBF;
 /* endregion */
 
 /* region Values */
+.visually-hidden {
+position: absolute;
+width: 1px;
+height: 1px;
+margin: -1px;
+border: 0;
+padding: 0;
+white-space: nowrap;
+clip-path: inset(100%);
+clip: rect(0 0 0 0);
+overflow: hidden;
+}
+.values-list {
+    display: flex;
+    column-gap: 24px;
+}
+
+.team-list {
+    display: flex;
+    column-gap: 24px;
+}
+
 
 .values-caption {
     color: #2e2f42;
@@ -164,9 +249,19 @@ letter-spacing: 0.4px;
     letter-spacing: 0.32px;
 
 }
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    --indent-row: 48px;
+    --indent-col: 24px;
+    --items: 3;
+}
 /* endregion */
 
 /* region Footer */
+.footer {
+    padding: 100px 0;;
+}
 .footer-logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
