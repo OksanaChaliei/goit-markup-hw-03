@@ -21,6 +21,7 @@ height: auto;
 .container {
     max-width: 1158px;
     padding: 0 15px;
+    display: flex;
     margin: 0 auto;
 }
 .card-set {
@@ -34,7 +35,7 @@ width: calc((100% - 48px) / 3);
 box-sizing: border-box;
 }
 .section {
-  padding: 120px 0;  
+  padding: 120px 0; 
 }
 
 /* region Header */
@@ -251,6 +252,7 @@ border-top: none;
 width: calc((100% - 48px) / 3);
 }
 .portfolio-title {
+    margin-bottom: 72px;
     color: #2e2f42;
     font-size: 36px;
     font-weight: bold;
@@ -262,7 +264,6 @@ width: calc((100% - 48px) / 3);
 
 .portfolio-caption {
     margin-bottom: 8px;
-    margin-bottom: 72px;
     color: #2e2f42;
     font-size: 20px;
     font-weight: 500;
