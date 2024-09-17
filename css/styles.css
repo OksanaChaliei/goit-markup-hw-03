@@ -21,7 +21,6 @@ height: auto;
 .container {
     max-width: 1158px;
     padding: 0 15px;
-    display: flex;
     margin: 0 auto;
 }
 .card-set {
@@ -290,6 +289,7 @@ border-top: none;
 /* region Footer */
 .footer {
     padding: 100px 0;
+    background-color: #2E2F42;
 }
 .footer-logo {
     display: inline-block;
@@ -306,13 +306,6 @@ border-top: none;
 
 .logo-text {
     color: #f4f4fd;
-}
-
-.studio-text {
-    color: #f4f4fd;
-}
-.footer {
-    background-color: #2E2F42;
 }
 .footer-desc {
     color: #F4F4FD;
