@@ -5,7 +5,7 @@ body {
     background-color: #FFFFFF;
 }
 h1,h2,h3,h4,h5,h6,p {
- margin: 50px;   
+ margin: 0;   
 }
 ul,
 li {
@@ -64,9 +64,7 @@ border-bottom: 1px solid #e7e9fc;
 .header-nav {
  display: flex; 
  align-items: center;
- justify-content: space-between;
- margin-right: 166px;
- flex-grow: 1;   
+ justify-content: space-between;  
 }
 .header-nav-list {
  display: flex; 
@@ -78,7 +76,6 @@ border-bottom: 1px solid #e7e9fc;
 display: flex;
 align-items: center;
 gap: 40px;
-padding: 24px 0;;
 }
 .header-menu {
  display: block;
@@ -106,6 +103,7 @@ color: #404BBF;
 display: flex;
 align-items: center;
 font-style: normal;
+margin-left: auto;
 }
 .header-info {
   color: #434455;
@@ -132,6 +130,9 @@ font-style: normal;
     line-height: 1.07;
     letter-spacing: 1.12px;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 48px;
 }
 .main-button {
     display: block;
@@ -216,7 +217,6 @@ overflow: hidden;
 .team-list {
     display: flex;
     gap: 24px;
-    width: calc((100% - 72px) / 4);
 }
 .team-item {
     width: calc((100% - 72px) / 4);
@@ -248,7 +248,6 @@ width: calc((100% - 48px) / 3);
 box-sizing: border-box;
 }
 .portfolio-info {
-width: calc((100% - 48px) / 3);
 padding: 32px 16px;
 border: 1px solid #e7e9fc;
 border-top: none;
@@ -311,6 +310,7 @@ border-top: none;
     color: #f4f4fd;
 }
 .footer-desc {
+    max-width: 264px;
     color: #F4F4FD;
     font-size: 16px;
     line-height: 1.5;
